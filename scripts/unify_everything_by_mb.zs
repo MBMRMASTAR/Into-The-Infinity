@@ -202,5 +202,74 @@ mods.jei.JEI.hideItem(<item:thermal:lead_ore>);
 mods.jei.JEI.hideItem(<item:mekanism:lead_ore>);
 mods.jei.JEI.hideItem(<item:immersiveengineering:ore_lead>);
 
-#mods.jei.JEI.hideItem();
 
+
+//nickel
+
+//variáveis
+
+block = <item:alltheores:nickel_block>;
+block_tag = <tag:items:forge:storage_blocks/nickel>;
+ingot = <item:alltheores:nickel_ingot>;
+ingot_tag = <tag:items:forge:ingots/nickel>;
+nugget = <item:alltheores:nickel_nugget>;
+nugget_tag = <tag:items:forge:nuggets/nickel>;
+ore_tag = <tag:items:forge:ores/nickel>;
+essencia = <item:mysticalagriculture:nickel_essence>;
+essencia_out = 4;
+fluid_ore = <fluid:tconstruct:molten_nickel>;
+ingot_tink = <item:immersiveengineering:ingot_nickel>;
+crushed  = <item:create:crushed_nickel_ore>;
+
+//simplificador
+craftingTable.removeRecipe(block_tag);
+craftingTable.addShaped("nw_nickel_block", block, [
+    [ingot_tag, ingot_tag, ingot_tag],
+    [ingot_tag, ingot_tag, ingot_tag],
+    [ingot_tag, ingot_tag, ingot_tag]
+]);
+craftingTable.removeRecipe(ingot_tag);
+craftingTable.addShaped("nw_nickel_essence", ingot * essencia_out, [
+    [essencia, essencia, essencia],
+    [essencia, <item:minecraft:air>, essencia],
+    [essencia, essencia, essencia]
+]);
+
+craftingTable.addShaped("nw_nickel_nugget", ingot, [
+    [nugget_tag, nugget_tag, nugget_tag],
+    [nugget_tag, nugget_tag, nugget_tag],
+    [nugget_tag, nugget_tag, nugget_tag]
+]);
+craftingTable.removeRecipe(nugget_tag);
+craftingTable.addShapeless("nw_nugget_nickel", nugget * 9, [ingot_tag]);
+craftingTable.addShapeless("nw_nickel_block_nugget", ingot * 9, [block_tag]);
+furnace.removeRecipe(ingot_tag);
+furnace.addRecipe("nw_nickel_furnace", ingot, ore_tag, 1.0, 200);
+blastFurnace.removeRecipe(ingot_tag);
+blastFurnace.addRecipe("nw_nickel_blastfurnace", ingot, ore_tag, 1.0, 200);
+//opcional
+// tk casting
+<recipetype:tconstruct:casting_table>.removeRecipe(ingot_tink);
+<recipetype:tconstruct:casting_table>.addItemCastingRecipe("nw_nickel_casting_table", <item:tconstruct:ingot_cast>, fluid_ore * 144, ingot, 60, false, false);
+// bulk washing
+<recipetype:create:splashing>.removeRecipe(nugget_tag);
+<recipetype:create:splashing>.addRecipe("splashing_nickel", [nugget * 10, nugget * 5 % 50], crushed);
+//ingot
+mods.jei.JEI.hideItem(<item:chemlib:ingot_nickel>);
+mods.jei.JEI.hideItem(<item:thermal:nickel_ingot>);
+mods.jei.JEI.hideItem(<item:immersiveengineering:ingot_nickel>);
+//block
+mods.jei.JEI.hideItem(<item:immersiveengineering:storage_nickel>);
+mods.jei.JEI.hideItem(<item:thermal:nickel_block>);
+//nugget
+mods.jei.JEI.hideItem(<item:immersiveengineering:nugget_nickel>);
+mods.jei.JEI.hideItem(<item:thermal:nickel_nugget>);
+//ore
+mods.jei.JEI.hideItem(<item:immersiveengineering:ore_nickel>);
+mods.jei.JEI.hideItem(<item:thermal:nickel_ore>);
+
+// osmium
+
+
+
+#mods.jei.JEI.hideItem();
