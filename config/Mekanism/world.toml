@@ -28,7 +28,7 @@
 	#Generation Settings for tin ore.
 	[world_generation.tin]
 		#Determines if tin ore should be added to world generation.
-		shouldGenerate = true
+		shouldGenerate = false
 		#Chance that tin generates in a chunk.
 		#Range: 1 ~ 128
 		perChunk = 14
@@ -64,7 +64,7 @@
 	#Generation Settings for uranium ore.
 	[world_generation.uranium]
 		#Determines if uranium ore should be added to world generation.
-		shouldGenerate = true
+		shouldGenerate = false
 		#Chance that uranium generates in a chunk.
 		#Range: 1 ~ 128
 		perChunk = 8
