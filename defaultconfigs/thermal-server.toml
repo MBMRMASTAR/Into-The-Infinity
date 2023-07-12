@@ -210,7 +210,7 @@
 	#Set to FALSE to prevent 'Thermal Series' Silver from generating.
 	Silver = true
 	#Set to FALSE to prevent 'Thermal Series' Nickel from generating.
-	Nickel = true
+	Nickel = false
 	#Set to FALSE to prevent 'Thermal Series' Oil Sands from generating.
 	Oil = true
 
