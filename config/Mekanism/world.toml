@@ -46,7 +46,7 @@
 	#Generation Settings for osmium ore.
 	[world_generation.osmium]
 		#Determines if osmium ore should be added to world generation.
-		shouldGenerate = true
+		shouldGenerate = false
 		#Chance that osmium generates in a chunk.
 		#Range: 1 ~ 128
 		perChunk = 12
@@ -100,7 +100,7 @@
 	#Generation Settings for lead ore.
 	[world_generation.lead]
 		#Determines if lead ore should be added to world generation.
-		shouldGenerate = true
+		shouldGenerate = false
 		#Chance that lead generates in a chunk.
 		#Range: 1 ~ 128
 		perChunk = 8
