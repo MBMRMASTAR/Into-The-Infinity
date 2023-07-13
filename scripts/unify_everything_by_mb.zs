@@ -556,7 +556,6 @@ mods.jei.JEI.hideItem(<item:immersiveengineering:nugget_uranium>);
 mods.jei.JEI.hideItem(<item:mekanism:nugget_uranium>);
 //ore
 mods.jei.JEI.hideItem(<item:biggerreactors:yellorite_ore>);
-mods.jei.JEI.hideItem(<item:bigreactors:yellorite_ore>);
 mods.jei.JEI.hideItem(<item:mekanism:uranium_ore>);
 //dust
 mods.jei.JEI.hideItem(<item:biggerreactors:yellorium_dust>);
