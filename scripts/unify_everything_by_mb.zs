@@ -48,6 +48,8 @@ furnace.removeRecipe(<tag:items:forge:ingots/copper>);
 furnace.addRecipe("nw_copper_furnace", <item:alltheores:copper_ingot>, <tag:items:forge:ores/copper>, 1.0, 200);
 blastFurnace.removeRecipe(<tag:items:forge:ingots/copper>);
 blastFurnace.addRecipe("nw_copper_blastfurnace", <item:alltheores:copper_ingot>, <tag:items:forge:ores/copper>, 1.0, 200);
+furnace.addRecipe("nw_copper_dust_funace", <item:alltheores:copper_ingot>, <tag:items:forge:dusts/copper>, 1.0, 200);
+blastFurnace.addRecipe("nw_copper_dust_blast", <item:alltheores:copper_ingot>, <tag:items:forge:dusts/copper>, 1.0, 100);
 //opcional
 <recipetype:tconstruct:casting_table>.removeRecipe(<item:tconstruct:copper_ingot>);
 <recipetype:tconstruct:casting_table>.addItemCastingRecipe("nw_copper_casting_table", <item:tconstruct:ingot_cast>, <fluid:tconstruct:molten_copper> * 144, <item:alltheores:copper_ingot>, 60, false, false);
@@ -124,6 +126,8 @@ furnace.removeRecipe(<tag:items:forge:ingots/aluminum>);
 furnace.addRecipe("nw_aluminum_furnace", <item:alltheores:aluminum_ingot>, <tag:items:forge:ores/aluminum>, 1.0, 200);
 blastFurnace.removeRecipe(<tag:items:forge:ingots/aluminum>);
 blastFurnace.addRecipe("nw_aluminum_blastfurnace", <item:alltheores:aluminum_ingot>, <tag:items:forge:ores/aluminum>, 1.0, 200);
+furnace.addRecipe("nw_aluminum_dust_funace", <item:alltheores:aluminum_ingot>, <tag:items:forge:dusts/aluminum>, 1.0, 200);
+blastFurnace.addRecipe("nw_aluminum_dust_blast", <item:alltheores:aluminum_ingot>, <tag:items:forge:dusts/aluminum>, 1.0, 100);
 //optional
 <recipetype:tconstruct:casting_table>.removeRecipe(<item:immersiveengineering:ingot_aluminum>);
 <recipetype:tconstruct:casting_table>.addItemCastingRecipe("nw_aluminum_casting_table", <item:tconstruct:ingot_cast>, <fluid:tconstruct:molten_aluminum> * 144, <item:alltheores:aluminum_ingot>, 60, false, false);
@@ -184,6 +188,8 @@ furnace.removeRecipe(ingot_tag);
 furnace.addRecipe("nw_lead_furnace", ingot, ore_tag, 1.0, 200);
 blastFurnace.removeRecipe(ingot_tag);
 blastFurnace.addRecipe("nw_lead_blastfurnace", ingot, ore_tag, 1.0, 200);
+furnace.addRecipe("nw_lead_dust_funace", ingot, <tag:items:forge:dusts/lead>, 1.0, 200);
+blastFurnace.addRecipe("nw_lead_dust_blast", ingot, <tag:items:forge:dusts/lead>, 1.0, 100);
 //opcional
 // tk casting
 <recipetype:tconstruct:casting_table>.removeRecipe(ingot_tink);
@@ -261,6 +267,8 @@ furnace.removeRecipe(ingot_tag);
 furnace.addRecipe("nw_nickel_furnace", ingot, ore_tag, 1.0, 200);
 blastFurnace.removeRecipe(ingot_tag);
 blastFurnace.addRecipe("nw_nickel_blastfurnace", ingot, ore_tag, 1.0, 200);
+furnace.addRecipe("nw_nickel_dust_funace", ingot, <tag:items:forge:dusts/nickel>, 1.0, 200);
+blastFurnace.addRecipe("nw_nickel_dust_blast", ingot, <tag:items:forge:dusts/nickel>, 1.0, 100);
 //opcional
 // tk casting
 <recipetype:tconstruct:casting_table>.removeRecipe(ingot_tink);
@@ -327,6 +335,8 @@ furnace.removeRecipe(ingot_tag);
 furnace.addRecipe("nw_osmium_furnace", ingot, ore_tag, 1.0, 200);
 blastFurnace.removeRecipe(ingot_tag);
 blastFurnace.addRecipe("nw_osmium_blastfurnace", ingot, ore_tag, 1.0, 200);
+furnace.addRecipe("nw_osmium_dust_funace", ingot, <tag:items:forge:dusts/osmium>, 1.0, 200);
+blastFurnace.addRecipe("nw_osmium_dust_blast", ingot, <tag:items:forge:dusts/osmium>, 1.0, 100);
 //opcional
 // tk casting
 <recipetype:tconstruct:casting_table>.removeRecipe(ingot_tink);
@@ -394,6 +404,8 @@ furnace.removeRecipe(ingot_tag);
 furnace.addRecipe("nw_silver_furnace", ingot, ore_tag, 1.0, 200);
 blastFurnace.removeRecipe(ingot_tag);
 blastFurnace.addRecipe("nw_silver_blastfurnace", ingot, ore_tag, 1.0, 200);
+furnace.addRecipe("nw_silver_dust_funace", ingot, <tag:items:forge:dusts/silver>, 1.0, 200);
+blastFurnace.addRecipe("nw_silver_dust_blast", ingot, <tag:items:forge:dusts/silver>, 1.0, 100);
 //opcional
 // tk casting
 <recipetype:tconstruct:casting_table>.removeRecipe(ingot_tink);
@@ -466,6 +478,8 @@ furnace.removeRecipe(ingot_tag);
 furnace.addRecipe("nw_" + name + "_furnace", ingot, ore_tag, 1.0, 200);
 blastFurnace.removeRecipe(ingot_tag);
 blastFurnace.addRecipe("nw_" + name + "_blastfurnace", ingot, ore_tag, 1.0, 200);
+furnace.addRecipe("nw_" + name + "_dust_funace", ingot, <tag:items:forge:dusts/tin>, 1.0, 200);
+blastFurnace.addRecipe("nw_" + name + "_dust_blast", ingot, <tag:items:forge:dusts/tin>, 1.0, 100);
 //opcional
 // tk casting
 <recipetype:tconstruct:casting_table>.removeRecipe(ingot_tink);
@@ -535,6 +549,8 @@ furnace.removeRecipe(ingot_tag);
 furnace.addRecipe("nw_" + name + "_furnace", ingot, ore_tag, 1.0, 200);
 blastFurnace.removeRecipe(ingot_tag);
 blastFurnace.addRecipe("nw_" + name + "_blastfurnace", ingot, ore_tag, 1.0, 200);
+furnace.addRecipe("nw_" + name + "_dust_funace", ingot, <tag:items:forge:dusts/uranium>, 1.0, 200);
+blastFurnace.addRecipe("nw_" + name + "_dust_blast", ingot, <tag:items:forge:dusts/uranium>, 1.0, 100);
 //opcional
 // tk casting
 <recipetype:tconstruct:casting_table>.removeRecipe(ingot_tink);
@@ -608,6 +624,8 @@ furnace.removeRecipe(ingot_tag);
 furnace.addRecipe("nw_" + name + "_furnace", ingot, ore_tag, 1.0, 200);
 blastFurnace.removeRecipe(ingot_tag);
 blastFurnace.addRecipe("nw_" + name + "_blastfurnace", ingot, ore_tag, 1.0, 200);
+furnace.addRecipe("nw_" + name + "_dust_funace", ingot, <tag:items:forge:dusts/zinc>, 1.0, 200);
+blastFurnace.addRecipe("nw_" + name + "_dust_blast", ingot, <tag:items:forge:dusts/zinc>, 1.0, 100);
 //opcional tinkers
 // tk casting
 <recipetype:tconstruct:casting_table>.removeRecipe(ingot_tink);
@@ -632,7 +650,7 @@ mods.jei.JEI.hideItem(<item:create:zinc_ore>);
 #mods.jei.JEI.hideItem();
 
 //randow stuff
-craftingTable.removeByName("cavesandcliffs:raw_copper_block");
+craftingTable.removeRecipe(<item:cavesandcliffs:raw_copper_block>);
 craftingTable.removeRecipe(<item:immersiveengineering:slab_storage_copper>);
 craftingTable.removeRecipe(<item:thermal:press_packing_3x3_die>);
 
