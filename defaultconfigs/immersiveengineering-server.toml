@@ -203,7 +203,7 @@
 		fluid = 250
 		#A modifier to apply to the cloches total growing speed
 		#Range: 0.001 ~ 1000.0
-		growth_modifier = 1.0
+		growth_modifier = 3.0
 		#A base-modifier for all solid fertilizers in the cloche
 		#Range: 0.001 ~ 1000.0
 		solid_fertilizer_mod = 1.0
