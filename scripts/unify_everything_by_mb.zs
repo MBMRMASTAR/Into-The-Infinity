@@ -1,4 +1,4 @@
-import crafttweaker.api.recipe.Replacer;
+//import crafttweaker.api.recipe.Replacer;
 import crafttweaker.api.FurnaceManager;
 import crafttweaker.api.BlastFurnaceManager;
 import crafttweaker.api.item.IItemStack;
@@ -655,6 +655,7 @@ craftingTable.removeRecipe(<item:immersiveengineering:slab_storage_copper>);
 craftingTable.removeRecipe(<item:thermal:press_packing_3x3_die>);
 
 //other stuff
+mods.jei.JEI.hideItem(<item:bloodmagic:coalsand>);
 //WIP
 #mods.jei.JEI.hideRegex("thermal:" + "_gear");
 
