@@ -653,6 +653,15 @@ mods.jei.JEI.hideItem(<item:create:zinc_ore>);
 craftingTable.removeRecipe(<item:cavesandcliffs:raw_copper_block>);
 craftingTable.removeRecipe(<item:immersiveengineering:slab_storage_copper>);
 craftingTable.removeRecipe(<item:thermal:press_packing_3x3_die>);
+//alloys al ways
+craftingTable.removeRecipe(<tag:items:forge:dusts/bronze>);
+craftingTable.removeRecipe(<tag:items:forge:dusts/invar>);
+craftingTable.removeRecipe(<tag:items:forge:dusts/electrum>);
+craftingTable.removeRecipe(<tag:items:forge:dusts/signalum>);
+craftingTable.removeRecipe(<tag:items:forge:dusts/enderium>);
+craftingTable.removeRecipe(<tag:items:forge:dusts/lumium>);
+
+
 
 //other stuff
 mods.jei.JEI.hideItem(<item:bloodmagic:coalsand>);
