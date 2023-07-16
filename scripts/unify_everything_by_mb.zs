@@ -660,7 +660,7 @@ craftingTable.removeRecipe(<tag:items:forge:dusts/electrum>);
 craftingTable.removeRecipe(<tag:items:forge:dusts/signalum>);
 craftingTable.removeRecipe(<tag:items:forge:dusts/enderium>);
 craftingTable.removeRecipe(<tag:items:forge:dusts/lumium>);
-
+mods.jei.JEI.hideItem(<item:immersiveengineering:ingot_electrum>);
 
 
 //other stuff

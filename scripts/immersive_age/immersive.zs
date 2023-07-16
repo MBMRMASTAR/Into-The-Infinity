@@ -26,6 +26,7 @@ craftingTable.addShaped("nw_heavy_engineering_block", <item:immersiveengineering
     [<item:immersiveengineering:sheetmetal_steel>, <item:moreplates:constantan_gear>, <item:immersiveengineering:sheetmetal_steel>]
 ]);
 craftingTable.removeRecipe(<item:thermal:electrum_dust>);
+<recipetype:create:mixing>.removeRecipe(<tag:items:forge:ingots/electrum>);
 <recipetype:create:mixing>.addRecipe("electrum", "heated", <item:thermal:electrum_ingot> * 2, [<item:minecraft:air>], [<fluid:tconstruct:molten_gold> * 144, <fluid:tconstruct:molten_silver> * 144]);
 <recipetype:tconstruct:alloying>.removeRecipe(<fluid:tconstruct:molten_electrum>);
 craftingTable.removeRecipe(<tag:items:forge:gears/electrum>);
@@ -61,3 +62,11 @@ craftingTable.addShaped("nw_blastbrick", <item:immersiveengineering:blastbrick> 
     [scorched_bricks, kiln, scorched_bricks],
     [kiln, scorched_bricks, kiln]
 ]);
+craftingTable.removeRecipe(<tag:items:forge:plates/copper>);
+craftingTable.removeRecipe("immersiveengineering:crafting/steel_scaffolding_standard");
+/*craftingTable.addShaped("nw_scaffolding_steel", [
+    [<tag:items:forge:rods/steel>],
+    [],
+    []
+])
+*/
