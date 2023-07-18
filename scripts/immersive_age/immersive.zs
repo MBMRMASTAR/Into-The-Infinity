@@ -63,10 +63,9 @@ craftingTable.addShaped("nw_blastbrick", <item:immersiveengineering:blastbrick> 
     [kiln, scorched_bricks, kiln]
 ]);
 craftingTable.removeRecipe(<tag:items:forge:plates/copper>);
-craftingTable.removeRecipe("immersiveengineering:crafting/steel_scaffolding_standard");
-/*craftingTable.addShaped("nw_scaffolding_steel", [
-    [<tag:items:forge:rods/steel>],
-    [],
-    []
-])
-*/
+craftingTable.removeByName("immersiveengineering:crafting/steel_scaffolding_standard");
+craftingTable.addShaped("nw_scaffolding_steel", <item:immersiveengineering:steel_scaffolding_standard> * 4, [
+    [<tag:items:forge:rods/steel>, <tag:items:forge:ingots/steel>, <tag:items:forge:rods/steel>],
+    [<tag:items:forge:ingots/steel>, <tag:items:forge:rods/steel>, <tag:items:forge:ingots/steel>],
+    [<tag:items:forge:rods/steel>, <tag:items:forge:ingots/steel>, <tag:items:forge:rods/steel>]
+]);
