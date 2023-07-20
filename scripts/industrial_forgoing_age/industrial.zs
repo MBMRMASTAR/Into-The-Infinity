@@ -36,4 +36,9 @@ craftingTable.removeRecipe(<item:industrialforegoing:fluid_extractor>);
     "count": 1
   },
 });
-Replacer.forOutput(<item:industrialforegoing:dissolution_chamber>, craftingTable).replace(<tag:items:forge:plastic>, <item:pneumaticcraft:plastic>);
+craftingTable.removeRecipe(<item:industrialforegoing:dissolution_chamber>);
+craftingTable.addShaped("nw_dissolution_chamber", <item:industrialforegoing:dissolution_chamber>, [
+  [<item:pneumaticcraft:plastic>, <tag:items:forge:chests>, <item:pneumaticcraft:plastic>],
+  [<item:minecraft:bucket>, <item:industrialforegoing:machine_frame_pity>, <item:minecraft:bucket>],
+  [<item:minecraft:gold_ingot>, <tag:items:forge:gears/diamond>, <item:minecraft:gold_ingot>]
+]);

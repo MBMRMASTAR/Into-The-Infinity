@@ -23,9 +23,8 @@ craftingTable.removeRecipe(<item:refinedstorage:raw_improved_processor>);
     .loops(2)
     .addOutput(<item:refinedstorage:raw_improved_processor>, 1)
     );
-<tag:items:forge:plastic>.add(<item:pneumaticcraft:plastic>);
 <recipetype:pneumaticcraft:pressure_chamber>.removeRecipe(<item:pneumaticcraft:empty_pcb>);
-<recipetype:pneumaticcraft:pressure_chamber>.addRecipe("nw_empty_pcb", [<item:minecraft:redstone_torch> * 2, <item:minecraft:gold_nugget> * 3, <tag:items:forge:plastic>, <item:refinedstorage:silicon> * 3], [<item:pneumaticcraft:empty_pcb>*3], 2.0);
+<recipetype:pneumaticcraft:pressure_chamber>.addRecipe("nw_empty_pcb", [<item:minecraft:redstone_torch> * 2, <item:minecraft:gold_nugget> * 3, <tag:items:forge:plastic_chamber>, <item:refinedstorage:silicon> * 3], [<item:pneumaticcraft:empty_pcb>*3], 2.0);
 craftingTable.removeRecipe(<item:refinedstorage:raw_advanced_processor>);
 <recipetype:create:sequenced_assembly>.addRecipe(<recipetype:create:sequenced_assembly>.builder("diamond_processador")
     .require(<item:pneumaticcraft:unassembled_pcb>)
@@ -50,3 +49,15 @@ craftingTable.removeRecipe(<item:refinedstorage:raw_basic_processor>);
     );
 craftingTable.removeRecipe(<item:refinedstorage:controller>);
 <recipetype:pneumaticcraft:pressure_chamber>.addRecipe("nw_controller", [<item:refinedstorage:quartz_enriched_iron_block> * 4, <item:refinedstorage:machine_casing>, <item:refinedstorage:silicon> * 3, <item:refinedstorage:advanced_processor>], [<item:refinedstorage:controller>], 4.9);
+craftingTable.removeRecipe(<item:pneumaticcraft:flux_compressor>);
+mods.extendedcrafting.TableCrafting.addShaped("nw_flux_compressor", 1, <item:pneumaticcraft:flux_compressor>, [
+    [<item:minecraft:redstone_block>, <tag:items:forge:gears/compressed_iron>, <item:pneumaticcraft:turbine_rotor>],
+    [<item:pneumaticcraft:turbine_rotor>, <item:refinedstorage:machine_casing>, <item:pneumaticcraft:advanced_pressure_tube>],
+    [<item:minecraft:redstone_block>, <tag:items:forge:gears/compressed_iron>, <item:pneumaticcraft:turbine_rotor>]
+]);
+craftingTable.removeRecipe(<item:pneumaticcraft:pneumatic_dynamo>);
+mods.extendedcrafting.TableCrafting.addShaped("nw_pneumatic_dynamo", 1, <item:pneumaticcraft:pneumatic_dynamo>, [
+    [<item:pneumaticcraft:turbine_rotor>, <item:pneumaticcraft:advanced_pressure_tube>, <item:pneumaticcraft:turbine_rotor>],
+    [<item:minecraft:redstone_block>, <tag:items:forge:storage_blocks/compressed_iron>, <item:minecraft:redstone_block>],
+    [<tag:items:forge:storage_blocks/compressed_iron>, <item:refinedstorage:machine_casing>, <tag:items:forge:storage_blocks/compressed_iron>]
+]);
