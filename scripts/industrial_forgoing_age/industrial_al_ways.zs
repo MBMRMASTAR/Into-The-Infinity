@@ -36,3 +36,17 @@ mods.extendedcrafting.TableCrafting.addShaped("nw_efficiency_addon_1", 4, <item:
     [gold_block, gold_block, vidro_branco, redstone_block, vidro_branco, redstone_block, vidro_branco, gold_block, gold_block],
     [<item:tconstruct:gray_clear_stained_glass_pane>, <item:tconstruct:gray_clear_stained_glass_pane>, vidro_cinzento, vidro_cinzento, <item:tconstruct:gray_clear_stained_glass_pane>, vidro_cinzento, vidro_cinzento, <item:tconstruct:gray_clear_stained_glass_pane>, <item:tconstruct:gray_clear_stained_glass_pane>]
 ]);
+var bone_block = <item:minecraft:bone_block>;
+/*<recipetype:industrialforegoing:dissolution_chamber>.removeRecipe(<item:industrialforegoing:processing_addon_1>);
+mods.extendedcrafting.TableCrafting.addShaped("nw_processing_addon_1", 4, <item:industrialforegoing:processing_addon_1>, [
+    [vidro_amarelo, gold_block, vidro_branco, vidro_branco, vidro_branco, vidro_branco, vidro_branco, gold_block, vidro_amarelo],
+    [gold_block, gold_block, vidro_cinzento, vidro_cinzento, vidro_cinzento, vidro_cinzento, vidro_cinzento, gold_block, gold_block],
+    [vidro_amarelo, gold_block, vidro_cinzento, vidro_cinzento, vidro_cinzento,  redstone_block, redstone_block, gold_block, vidro_amarelo],
+    [gold_block, gold_block, vidro_cinzento, vidro_cinzento, redstone_block, bone_block, bone_block, gold_block, gold_block],
+    [vidro_amarelo, gold_block, redstone_block, redstone_block, bone_block, bone_block, bone_block, gold_block, vidro_amarelo],
+    [],
+    [],
+    [],
+    []
+]);
+*/
