@@ -1,4 +1,21 @@
+import mods.jei.JEI;
 var air = <item:minecraft:air>;
+
+//função:remover todos os botany pots para fazer a receita nova
+//craftingTable.removeByRegex("botany_pots:.*_botany_pot");
+//craftingTable.removeByModid("botany_pots");
+/*
+var pots = = [
+    "botany_pot",
+    "hopper_botany_pot"
+];
+JEI.hideMod("botany_pots", (name) => {
+    return name in pots;
+});
+*/
+
+craftingTable.removeRecipe(<tag:items:botanypots:botany_pots>);
+
 
 # Crafting do BotanyPots
 craftingTable.removeRecipe(<item:botanypots:botany_pot>);
