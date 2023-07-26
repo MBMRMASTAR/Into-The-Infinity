@@ -26,3 +26,11 @@ mods.extendedcrafting.TableCrafting.addShaped("infuser", 3, <item:mekanism:metal
 	[<item:pneumaticcraft:compressed_iron_block>, <item:pneumaticcraft:printed_circuit_board>, <item:pneumaticcraft:printed_circuit_board>, <item:pipez:item_pipe>, <item:pneumaticcraft:printed_circuit_board>, <item:pneumaticcraft:printed_circuit_board>, <item:pneumaticcraft:compressed_iron_block>], 
 	[<item:pneumaticcraft:compressed_iron_block>, <item:pneumaticcraft:compressed_iron_block>, <item:pneumaticcraft:compressed_iron_block>, <item:pipez:universal_pipe>, <item:pneumaticcraft:compressed_iron_block>, <item:pneumaticcraft:compressed_iron_block>, <item:pneumaticcraft:compressed_iron_block>]
 ]);
+craftingTable.removeRecipe(<item:mekanism:atomic_disassembler>);
+mods.extendedcrafting.TableCrafting.addShaped("nw_atomic", 0, <item:mekanism:atomic_disassembler>, [
+	[<item:thermal:signalum_ingot>, <item:thermal:signalum_ingot>, <item:thermal:signalum_ingot>, <item:mekanism:ultimate_control_circuit>, <item:thermal:enderium_ingot>], 
+	[<item:minecraft:air>, <item:thermal:signalum_ingot>, <item:thermal:enderium_ingot>, <item:powah:energy_cell_nitro>, <item:mekanism:ultimate_control_circuit>], 
+	[<item:minecraft:air>, <item:pneumaticcraft:compressed_iron_block>, <item:pneumaticcraft:printed_circuit_board>, <item:thermal:enderium_ingot>, <item:thermal:enderium_ingot>], 
+	[<item:pneumaticcraft:compressed_iron_block>, <tag:items:forge:storage_blocks/steel>, <item:pneumaticcraft:compressed_iron_block>, <item:minecraft:air>, <item:minecraft:air>], 
+	[<tag:items:forge:storage_blocks/steel>, <item:pneumaticcraft:compressed_iron_block>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
+]);
